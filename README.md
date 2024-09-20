@@ -1,4 +1,4 @@
-# ProjetoEmEquipe
+## ProjetoEmEquipe
 Atividade EAD em Grupo
 
-UsandoGetKey >Feito por: Guilherme Mauricio de Oliveira Damasceno
+UsandoGetKey > Feito por: Guilherme Mauricio de Oliveira Damasceno
