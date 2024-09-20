@@ -8,16 +8,16 @@ Codigo básico usando os comandos "ConsoleKeyInfo" e "Console.ReadKey" do C# par
 
 ##Etapas Implementadas no Código.
 
--[x] Solicitar ao usuário para informar 2 números para que eles sejam usados na operação matemática que o usuário selecionar.
--[x] Solicitar ao usuário para escolher uma operação matemática apertando as seguintes teclas: "A" para Adição, "S" para Subtração, "M" para Multiplicação e "D" para Divisão.
--[x] Fazer a leitura da tecla que o usuário apertou.
--[x] Se o usuário tiver apertado alguma das teclas informadas à frente: "A", "S", "M" ou "D", realizar a operação matemática correspondente com os 2 números que o usuário informou.
--[x] Caso o usuário não tenha apertado alguma das 4 teclas citadas acima, pedir que ele aperte novamente alguma das teclas pedidas.
--[x] Retornar ao usuário o valor da operação matemática realizada pelo código.
+- [x] Solicitar ao usuário para informar 2 números para que eles sejam usados na operação matemática que o usuário selecionar.
+- [x] Solicitar ao usuário para escolher uma operação matemática apertando as seguintes teclas: "A" para Adição, "S" para Subtração, "M" para Multiplicação e "D" para Divisão.
+- [x] Fazer a leitura da tecla que o usuário apertou.
+- [x] Se o usuário tiver apertado alguma das teclas informadas à frente: "A", "S", "M" ou "D", realizar a operação matemática correspondente com os 2 números que o usuário informou.
+- [x] Caso o usuário não tenha apertado alguma das 4 teclas citadas acima, pedir que ele aperte novamente alguma das teclas pedidas.
+- [x] Retornar ao usuário o valor da operação matemática realizada pelo código.
 
 ##Backlog
 
--[x] Realizar operações matemáticas.
+- [] Realizar operações matemáticas.
 
 ##Conclusão
 
