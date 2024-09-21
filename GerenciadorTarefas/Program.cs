@@ -1,10 +1,25 @@
+void WriteTitle(string texto, int tamanho)
+{
+	Console.Clear();
+	Console.ForegroundColor = ConsoleColor.Blue;
+	Console.WriteLine(new string('=', tamanho));
+	Console.WriteLine(texto);
+	Console.WriteLine(new string('=', tamanho));
+	Console.ResetColor();
+}
+void ColorLine(string texto, ConsoleColor cor)
+{
+	Console.ForegroundColor = cor;
+	Console.WriteLine(texto);
+	Console.ResetColor();
+}
+
 List<string> tarefas = new List<string>();
 int opcao = 0, numeroTarefa;
 
 do
 {
-    Console.Clear();
-    Console.WriteLine("Gerenciador de Tarefas");
+    WriteTitle("Gerenciador de Tarefas", 22);
     Console.WriteLine("1- Adicionar Tarefa");
     Console.WriteLine("2- Listar Tarefas");
     Console.WriteLine("3- Remover Tarefa");
@@ -22,19 +37,18 @@ do
             switch (opcao)
             {
                 case 1:
-                    Console.Clear();
+                    WriteTitle("Gerenciador de Tarefas :: Adicionar Tarefa", 42);
                     Console.Write("Digite a descrição da tarefa: ");
                     string tarefa = Console.ReadLine();
                     tarefas.Add(tarefa);
-                    Console.WriteLine("Tarefa adicionada com sucesso!");
+                    ColorLine("Tarefa adicionada com sucesso!", ConsoleColor.Green);
                     break;
 
                 case 2:
-                    Console.Clear();
-                    Console.WriteLine("Tarefas:");
+                    WriteTitle("Gerenciador de Tarefas :: Lista de Tarefas", 42);
                     if (tarefas.Count == 0)
                     {
-                        Console.WriteLine("Nenhuma tarefa cadastrada.");
+                        ColorLine("Nenhuma tarefa cadastrada.", ConsoleColor.DarkYellow);
                         entradaInvalida = false;
                     }
                     else
@@ -45,7 +59,7 @@ do
                     break;
 
                 case 3:
-                    Console.Clear();
+                    WriteTitle("Gerenciador de Tarefas :: Remover Tarefa", 40);
                     entradaInvalida = true;
                     while (entradaInvalida)
                     {
@@ -61,17 +75,17 @@ do
                             }
                             else
                             {
-                                Console.WriteLine("Tarefa não encontrada.");
+                                ColorLine("Tarefa não encontrada.", ConsoleColor.DarkYellow);
                                 entradaInvalida = false;
                             }
                         }
                         else
-                            Console.WriteLine("Entrada inválida. Tente novamente.");
+                            ColorLine("Entrada inválida. Tente novamente.", ConsoleColor.Red);
                     }
                     break;
 
                 case 4:
-                    Console.Clear();
+                    WriteTitle("Gerenciador de Tarefas :: Editar Tarefa", 39);
                     entradaInvalida = true;
                     while (entradaInvalida)
                     {
@@ -87,35 +101,33 @@ do
                                 if (!string.IsNullOrWhiteSpace(novaDescricao))
                                 {
                                     tarefas[numeroTarefa] = novaDescricao;
-                                    Console.WriteLine("Tarefa editada com sucesso!");
+                                    ColorLine("Tarefa editada com sucesso!", ConsoleColor.Green);
                                 }
                                 entradaInvalida = false;
                             }
                             else
                             {
-                                Console.WriteLine("Tarefa não encontrada.");
+                                ColorLine("Tarefa não encontrada.", ConsoleColor.DarkYellow);
                                 entradaInvalida = false;
                             }
                         }
                         else
-                            Console.WriteLine("Entrada inválida. Tente novamente.");
+                            ColorLine("Entrada inválida. Tente novamente.", ConsoleColor.Red);
                     }
                     break;
 
                 case 0:
-                    Console.WriteLine("Saindo...");
+                    ColorLine("Saindo...", ConsoleColor.Cyan);
                     break;
 
                 default:
-                    Console.WriteLine("Opção inválida! Tente novamente.");
+                    ColorLine("Opção inválida! Tente novamente.", ConsoleColor.Red);
                     entradaInvalida = true;
                     break;
             }
         }
         else
-        {
-            Console.WriteLine("Opção inválida. Tente novamente.");
-        }
+            ColorLine("Opção inválida. Tente novamente.", ConsoleColor.Red);
     }
     Console.WriteLine("Pressione qualquer tecla para continuar...");
     Console.ReadKey();
