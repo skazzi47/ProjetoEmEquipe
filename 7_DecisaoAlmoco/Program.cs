@@ -34,6 +34,7 @@ switch (numMenu)
         int numPrato = int.Parse(Console.ReadLine()) - 1;
         Console.WriteLine($"Você escolheu almoçar {pratosPorRestaurante[numRestaurante][numPrato]} em {restaurantes[numRestaurante]}. Uma ótima pedida!");
         break;
+
     case "2":
         HashSet<string> pratosUnicos = [];
 
@@ -69,5 +70,11 @@ switch (numMenu)
                 Console.WriteLine($"Você escolheu almoçar {listaPratos[numPrato - 1]} em {restaurantesComPrato[numRestaurante]}. Uma ótima pedida!");
             }
         }
+        break;
+
+        case "3":
+        int restauranteAleatorio = aleatorio.Next(restaurantes.Count);
+        int pratoAleatorio = aleatorio.Next(pratosPorRestaurante[restauranteAleatorio].Count);
+        Console.WriteLine($"Que tal almoçar {pratosPorRestaurante[restauranteAleatorio][pratoAleatorio]} em {restaurantes[restauranteAleatorio]}?");
         break;
 }
