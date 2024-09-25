@@ -2,11 +2,14 @@
 Feito por: Ana Caroline Maia Duarte
 
 ### O que foi utilizado
-Este programa foi desenvolvido em C# e utiliza a biblioteca `System` para manipulação de console e geração de números aleatórios.
+- **Linguagem de Programação:** C#
+- **Framework:** .NET
+- **Versionamento:** GIT
+- **Gestão de Repositórios:** GitHub
 
 ### Etapas implementadas
-- [x] **Geração de Número Aleatório:** Implementação de um gerador de números aleatórios para simular o lançamento de um dado
-- [x] **Looping Interativo:** Loop para permitir que o usuário jogue o dado repetidamente, com validação para respostas e opção para encerrar a aplicação
+- [x] Gerador de números aleatórios para simular o lançamento de um dado
+- [x] Loop para permitir que o usuário jogue o dado repetidamente, com validação para respostas e opção para encerrar a aplicação
 
 ### Backlog
 - [ ] Exibir o histórico de resultados dos lançamentos

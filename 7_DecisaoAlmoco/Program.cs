@@ -103,31 +103,31 @@ while (escolherDeNovo)
         case 2:
             WriteTitle();
             HashSet<string> pratosUnicos = new HashSet<string>();
-            foreach (var pratos in pratosPorRestaurante)
-                pratosUnicos.UnionWith(pratos);
-            List<string> listaPratos = pratosUnicos.ToList();
+            foreach (var prato in pratosPorRestaurante)
+                pratosUnicos.UnionWith(prato);
+            List<string> pratos = pratosUnicos.ToList();
 
             WriteTitle();
             WriteSubtitle("— Opções de Pratos —");
-            for (int i = 0; i < listaPratos.Count; i++)
-                Console.WriteLine($"{i + 1}- {listaPratos[i]}");
-            escolhaPrato = GetValidOption(listaPratos.Count);
+            for (int i = 0; i < pratos.Count; i++)
+                Console.WriteLine($"{i + 1}- {pratos[i]}");
+            escolhaPrato = GetValidOption(pratos.Count);
             List<string> restaurantesComPrato = new List<string>();
             for (int i = 0; i < restaurantes.Count; i++)
             {
-                if (pratosPorRestaurante[i].Contains(listaPratos[escolhaPrato]))
+                if (pratosPorRestaurante[i].Contains(pratos[escolhaPrato]))
                     restaurantesComPrato.Add(restaurantes[i]);
             }
             if (restaurantesComPrato.Count > 0)
             {
                 WriteTitle();
-                WriteSubtitle($"— Opções de Restaurantes com {listaPratos[escolhaPrato]} —");
+                WriteSubtitle($"— Opções de Restaurantes com {pratos[escolhaPrato]} —");
                 for (int i = 0; i < restaurantesComPrato.Count; i++)
                     Console.WriteLine($"{i + 1}- {restaurantesComPrato[i]}");
                 escolhaRestaurante = GetValidOption(restaurantesComPrato.Count);
 
                 WriteTitle();
-                Console.WriteLine($"Você escolheu almoçar {listaPratos[escolhaPrato]} em {restaurantesComPrato[escolhaRestaurante]}. Uma ótima pedida!");
+                Console.WriteLine($"Você escolheu almoçar {pratos[escolhaPrato]} em {restaurantesComPrato[escolhaRestaurante]}. Uma ótima pedida!");
                 ChooseAgain();
             }
             break;
