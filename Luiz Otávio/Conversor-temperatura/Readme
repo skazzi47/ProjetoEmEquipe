@@ -1,0 +1,5 @@
+## Recursos utilizados na construção do código :
+
+Biblioteca do sistema.
+Estrutura de decisão (if) para contorno de input inválido do usuário.
+Estrutura de decisão (switch:case) para aplicação dos cálculos e impressão do resultado da conversão.
