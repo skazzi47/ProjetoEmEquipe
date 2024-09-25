@@ -1,4 +1,6 @@
-﻿void WriteTitle()
+﻿bool escolherDeNovo = true;
+
+void WriteTitle()
 {
     Console.Clear();
     Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -8,13 +10,14 @@
     Console.WriteLine(@"/____/\__/\__/_/___/\___/_/    \_,_/\__/ /_/ |_/_/_/_/_/\___/\__/\___/");
     Console.WriteLine("                                                              /_)      ");
     Console.ResetColor();
+    Console.WriteLine();
 }
 void WriteSubtitle(string texto)
 {
-    Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.DarkYellow;
     Console.WriteLine(texto);
     Console.ResetColor();
+    Console.WriteLine();
 }
 void ColorLineRed(string texto)
 {
@@ -22,134 +25,123 @@ void ColorLineRed(string texto)
     Console.WriteLine(texto);
     Console.ResetColor();
 }
+int GetValidOption(int maxOption)
+{
+    int option;
+    while (true)
+    {
+        Console.Write("Digite sua opção: ");
+        if (int.TryParse(Console.ReadLine(), out option) && option > 0 && option <= maxOption)
+            return option - 1;
 
-List<string> restaurantes = ["Restaurante Italiano", "Churrascaria", "Restaurante Japonês", "Fast-Food", "Restaurante Vegetariano"];
-List<List<string>> pratosPorRestaurante = [
-    [ "Lasanha de Berinjela", "Pizza Margherita", "Torta de Ricota" ],       // Italiano
-    [ "Batata Frita", "Picanha na Brasa", "Pizza Margherita" ],              // Churrascaria
-    [ "Hot Roll", "Ramen Tonkotsu", "Tempura de Legumes" ],                  // Japonês
-    [ "Batata Frita", "Cheeseburger", "Hot Roll" ],                          // Fast-Food
-    [ "Lasanha de Berinjela", "Salada Caesar Vegana", "Tempura de Legumes" ] // Vegetariano
-];
+        else
+            ColorLineRed("Opção inválida. Tente novamente.");
+    }
+}
+void ChooseAgain()
+{
+    while (true)
+    {
+        Console.Write("Deseja fazer outra escolha? (S/N): ");
+        string escolhaDeNovo = Console.ReadLine().ToUpper();
+        if (escolhaDeNovo == "S")
+        {
+            escolherDeNovo = true;
+            break;
+        }
+        else if (escolhaDeNovo == "N")
+        {
+            escolherDeNovo = false;
+            return;
+        }
+        else
+            ColorLineRed("Opção inválida. Tente novamente.");
+    }
+}
+
+List<string> restaurantes = new List<string> { "Restaurante Italiano", "Churrascaria", "Restaurante Japonês", "Fast-Food", "Restaurante Vegetariano" };
+List<List<string>> pratosPorRestaurante = new List<List<string>>
+{
+    new List<string> { "Lasanha de Berinjela", "Pizza Margherita", "Torta de Ricota" },       // Italiano
+    new List<string> { "Batata Frita", "Picanha na Brasa", "Pizza Margherita" },              // Churrascaria
+    new List<string> { "Hot Roll", "Ramen Tonkotsu", "Tempura de Legumes" },                  // Japonês
+    new List<string> { "Batata Frita", "Cheeseburger", "Hot Roll" },                          // Fast-Food
+    new List<string> { "Lasanha de Berinjela", "Salada Caesar Vegana", "Tempura de Legumes" } // Vegetariano
+};
 Random aleatorio = new Random();
-int numMenu = 0, numRestaurante = 0, numPrato = 0;
+int escolhaMenu = 0, escolhaRestaurante = 0, escolhaPrato = 0;
 
-WriteTitle();
-Console.WriteLine("1- Escolher restaurante");
-Console.WriteLine("2- Escolher prato");
-Console.WriteLine("3- Estou indeciso(a), escolha por mim");
-while (true)
+while (escolherDeNovo)
 {
-    Console.Write("Digite sua opção: ");
-    if (int.TryParse(Console.ReadLine(), out numMenu) && numMenu == 1 || numMenu == 2 || numMenu == 3)
-        break;
-    else
-        ColorLineRed("Opção inválida. Tente novamente.");
-}
+    WriteTitle();
+    WriteSubtitle("— Menu —");
+    Console.WriteLine("1- Escolher restaurante");
+    Console.WriteLine("2- Escolher prato");
+    Console.WriteLine("3- Estou indeciso(a), escolha por mim");
+    escolhaMenu = GetValidOption(3) + 1;
 
-switch (numMenu)
-{
-    case 1:
-        WriteTitle();
-        WriteSubtitle("Opções de Restaurantes");
-        for (int i = 0; i < restaurantes.Count(); i++)
-            Console.WriteLine($"{i + 1}- {restaurantes[i]}");
-
-        while (true)
-        {
-            Console.Write("Digite sua opção: ");
-            if (int.TryParse(Console.ReadLine(), out numRestaurante) && numRestaurante > 0 && numRestaurante <= restaurantes.Count)
-            {
-                numRestaurante--;
-                break;
-            }
-            else
-                ColorLineRed("Opção inválida. Tente novamente.");
-        }
-        WriteTitle();
-        WriteSubtitle($"Opções de Pratos em {restaurantes[numRestaurante]}");
-        for (int i = 0; i < pratosPorRestaurante[numRestaurante].Count; i++)
-            Console.WriteLine($"{i + 1}- {pratosPorRestaurante[numRestaurante][i]}");
-
-        while (true)
-        {
-            Console.Write("Digite sua opção: ");
-            if (int.TryParse(Console.ReadLine(), out numPrato) && numPrato > 0 && numPrato <= pratosPorRestaurante[numRestaurante].Count)
-            {
-                numPrato--;
-                break;
-            }
-            else
-                ColorLineRed("Opção inválida. Tente novamente.");
-        }
-        WriteTitle();
-        Console.WriteLine($"Você escolheu almoçar {pratosPorRestaurante[numRestaurante][numPrato]} em {restaurantes[numRestaurante]}. Uma ótima pedida!");
-        break;
-
-    case 2:
-        WriteTitle();
-        HashSet<string> pratosUnicos = [];
-
-        foreach (var pratos in pratosPorRestaurante)
-            pratosUnicos.UnionWith(pratos);
-
-        List<string> listaPratos = pratosUnicos.ToList();
-
-        WriteSubtitle("Opções de Pratos");
-        for (int i = 0; i < listaPratos.Count; i++)
-            Console.WriteLine($"{i + 1}- {listaPratos[i]}");
-
-        while (true)
-        {
-            Console.Write("Digite sua opção: ");
-            if (int.TryParse(Console.ReadLine(), out numPrato) && numPrato > 0 && numPrato <= listaPratos.Count)
-            {
-                numPrato--;
-                break;
-            }
-            else
-                ColorLineRed("Opção inválida. Tente novamente.");
-        }
-
-        List<string> restaurantesComPrato = [];
-
-        for (int i = 0; i < restaurantes.Count; i++)
-        {
-            if (pratosPorRestaurante[i].Contains(listaPratos[numPrato]))
-                restaurantesComPrato.Add(restaurantes[i]);
-        }
-        if (restaurantesComPrato.Count > 0)
-        {
-            WriteSubtitle($"Restaurantes que oferecem {listaPratos[numPrato]}");
-
-            for (int i = 0; i < restaurantesComPrato.Count; i++)
-                Console.WriteLine($"{i + 1}- {restaurantesComPrato[i]}");
-
-            while (true)
-            {
-                Console.Write("Digite sua opção: ");
-                if (int.TryParse(Console.ReadLine(), out numRestaurante) && numRestaurante > 0 && numRestaurante <= restaurantesComPrato.Count)
-                {
-                    numRestaurante--;
-                    break;
-                }
-                else
-                    ColorLineRed("Opção inválida. Tente novamente.");
-            }
+    switch (escolhaMenu)
+    {
+        case 1:
             WriteTitle();
-            Console.WriteLine($"Você escolheu almoçar {listaPratos[numPrato]} em {restaurantesComPrato[numRestaurante]}. Uma ótima pedida!");
-        }
-        break;
+            WriteSubtitle("— Opções de Restaurantes —");
+            for (int i = 0; i < restaurantes.Count; i++)
+                Console.WriteLine($"{i + 1}- {restaurantes[i]}");
+            escolhaRestaurante = GetValidOption(restaurantes.Count);
 
-    case 3:
-        WriteTitle();
-        WriteSubtitle("3 - Estou indeciso(a), escolha por mim");
-        int restauranteAleatorio = aleatorio.Next(restaurantes.Count);
-        int pratoAleatorio = aleatorio.Next(pratosPorRestaurante[restauranteAleatorio].Count);
-        Console.WriteLine($"Sugiro que almoce {pratosPorRestaurante[restauranteAleatorio][pratoAleatorio]} em {restaurantes[restauranteAleatorio]}. Que tal?");
-        break;
+            WriteTitle();
+            WriteSubtitle($"— Opções de Pratos em {restaurantes[escolhaRestaurante]} —");
+            for (int i = 0; i < pratosPorRestaurante[escolhaRestaurante].Count; i++)
+                Console.WriteLine($"{i + 1}- {pratosPorRestaurante[escolhaRestaurante][i]}");
+            escolhaPrato = GetValidOption(pratosPorRestaurante[escolhaRestaurante].Count);
 
-    default:
-        ColorLineRed("Opção inválida. Tente novamente.");
-        break;
+            WriteTitle();
+            Console.WriteLine($"Você escolheu almoçar {pratosPorRestaurante[escolhaRestaurante][escolhaPrato]} em {restaurantes[escolhaRestaurante]}. Uma ótima pedida!");
+            ChooseAgain();
+            break;
+
+        case 2:
+            WriteTitle();
+            HashSet<string> pratosUnicos = new HashSet<string>();
+            foreach (var pratos in pratosPorRestaurante)
+                pratosUnicos.UnionWith(pratos);
+            List<string> listaPratos = pratosUnicos.ToList();
+
+            WriteTitle();
+            WriteSubtitle("— Opções de Pratos —");
+            for (int i = 0; i < listaPratos.Count; i++)
+                Console.WriteLine($"{i + 1}- {listaPratos[i]}");
+            escolhaPrato = GetValidOption(listaPratos.Count);
+            List<string> restaurantesComPrato = new List<string>();
+            for (int i = 0; i < restaurantes.Count; i++)
+            {
+                if (pratosPorRestaurante[i].Contains(listaPratos[escolhaPrato]))
+                    restaurantesComPrato.Add(restaurantes[i]);
+            }
+            if (restaurantesComPrato.Count > 0)
+            {
+                WriteTitle();
+                WriteSubtitle($"— Opções de Restaurantes com {listaPratos[escolhaPrato]} —");
+                for (int i = 0; i < restaurantesComPrato.Count; i++)
+                    Console.WriteLine($"{i + 1}- {restaurantesComPrato[i]}");
+                escolhaRestaurante = GetValidOption(restaurantesComPrato.Count);
+
+                WriteTitle();
+                Console.WriteLine($"Você escolheu almoçar {listaPratos[escolhaPrato]} em {restaurantesComPrato[escolhaRestaurante]}. Uma ótima pedida!");
+                ChooseAgain();
+            }
+            break;
+
+        case 3:
+            WriteTitle();
+            WriteSubtitle("— Escolha da Máquina —");
+            int restauranteAleatorio = aleatorio.Next(restaurantes.Count);
+            int pratoAleatorio = aleatorio.Next(pratosPorRestaurante[restauranteAleatorio].Count);
+            Console.WriteLine($"Sugiro que almoce {pratosPorRestaurante[restauranteAleatorio][pratoAleatorio]} em {restaurantes[restauranteAleatorio]}. Que tal?!");
+            ChooseAgain();
+            break;
+    }
 }
+WriteTitle();
+Console.WriteLine("Saindo...");
+Console.WriteLine("Tenha uma boa refeição!");
