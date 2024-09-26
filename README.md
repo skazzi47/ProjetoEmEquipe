@@ -122,3 +122,26 @@ Este aplicativo foi desenvolvido para simplificar a escolha de refeições, espe
 
 ## 8. Cronômetro Simples
 Feito por: Guilherme Mauricio de Oliveira Damasceno
+
+### O que foi utilizado:
+-Linguagem de Programação:  ``C#``
+-Biblioteca ``System.Diagnostics``
+-Comando ``Stopwatch stopwatch = new stopwatch();``
+-Comando ``stopwatch.Start();``
+-Comando ``stopwatch.Stop();``
+-Comando ``TimeSpan tempoDecorrido = stopwatch.Elapsed;``
+
+### Etapas implementadas:
+- [x] Chamar o comando ``Stopwatch`` para medir o tempo decorrido de maneira precisa.
+- [x] Pedir para o usuário pressionar a tecla ``ENTER`` para que o cronômetro comece a contar o tempo.
+- [x] Pedir para o usuário pressionar a tecla ``ENTER`` para que o cronômetro pare de contar o tempo.
+- [x] Chamar o comando ``TimeSpan tempoDecorrido = stopwatch.Elapsed;`` que fará a função de registrar oo tempo passado durante o funcionamento do cronômetro.
+- [x] Informar ao usuário quanto tempo o cronômetro registrou.
+
+### Backlog:
+- [x] Pressionar a tecla ``ENTER`` para começar a cronometrar
+- [x] Pressionar a tecla ``ENTER`` para parar a cronometrar
+- [x] Informar o tempo passado nesse processo.
+
+### Conclusão:
+Este código foi feito para fazer a função de um cronômetro e registrar quanto tempo se passou desde sua ativação até seu desligamento por parte do usuário ao qual o está utilizando.
