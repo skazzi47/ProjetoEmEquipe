@@ -1,8 +1,8 @@
 # ProjetoEmEquipe
-Projetos desenvolvidos em equipe como parte de uma atividade do curso técnico em Informática para Internet do SENAI.
+Projeto em equipe desenvolvido durante as aulas de Projeto de Interface Web do curso técnico em Informática para Internet do SENAI. A atividade envolveu o desenvolvimento de aplicações em C# e .NET e a gestão de repositórios no GitHub.
 
 ## 1. Calculadora Simples
-Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno [@skazzi47](https://github.com/skazzi47)
+Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno [(@skazzi47)](https://github.com/skazzi47)
 
 Descrição: Desenvolver uma calculadora que peça dois números e uma operação (+, -, *, /).
 
@@ -26,14 +26,14 @@ Geralmente, quando iríamos fazer estruturas condicionais em códigos de qualque
 ---
 
 ## 2. Jogo de Adivinhação de Números
-Desenvolvido por: Ykaro Kaynã [@kayna190](https://github.com/kayna190)
+Desenvolvido por: Ykaro Kaynã [(@kayna190)](https://github.com/kayna190)
 
 Descrição: Criar um jogo onde o programa gera um número aleatório e o usuário tenta adivinhar. Dar dicas se o número é maior ou menor.
 
-## O que foi utilizado
+### O que foi utilizado
 Biblioteca `System`, laços de repetição e validação de entrada.
 
-## Etapas implementadas
+### Etapas implementadas
 - [x] Definir o intervalo de números (0 a 100).
 - [x] Gerar um número aleatório que o usuário deve adivinhar.
 - [x] Solicitar palpites do usuário até que o número correto seja adivinhado.
@@ -41,22 +41,22 @@ Biblioteca `System`, laços de repetição e validação de entrada.
 - [x] Fornecer feedback ao usuário se o palpite está muito baixo ou muito alto.
 - [x] Informar ao usuário quantas tentativas foram necessárias para adivinhar o número correto.
 
-## Backlog
+### Backlog
 - [ ] Permitir que o usuário escolha o intervalo de números.
 - [ ] Adicionar um sistema de pontuação baseado no número de tentativas.
 - [ ] Incluir uma opção para jogar novamente após acertar.
 
-## Conclusão
+### Conclusão
 Este jogo de adivinhação oferece uma experiência divertida e interativa, ilustrando conceitos fundamentais de C# como controle de fluxo e manipulação de entradas. Futuras melhorias podem aumentar a complexidade do jogo e a interatividade, tornando-o ainda mais envolvente.
 
 ---
 
 ## 3. Gerador de Senhas Aleatórias
-Desenvolvido por: Lígia Souza [@liGia-sz](https://github.com/liGia-sz)
+Desenvolvido por: Lígia Souza [(@liGia-sz)](https://github.com/liGia-sz)
 
 Descrição: Fazer um programa que gere uma senha aleatória com base em um conjunto de caracteres (letras e números) com um comprimento definido pelo usuário.
 
-## O que foi utilizado
+#### O que foi utilizado
 Biblioteca `System`, laços de repetição e manipulação de strings com `StringBuilder`.
 
 ## Etapas implementadas
@@ -66,18 +66,18 @@ Biblioteca `System`, laços de repetição e manipulação de strings com `Strin
 - [x] Exibir a senha gerada para o usuário.
 - [x] Incluir mensagem de erro para entradas inválidas.
 
-## Backlog
+### Backlog
 - [ ] Permitir que o usuário escolha incluir caracteres especiais na senha.
 - [ ] Implementar uma opção para gerar múltiplas senhas de uma vez.
 - [ ] Adicionar uma funcionalidade para verificar a força da senha gerada.
 
-## Conclusão
+### Conclusão
 Este gerador de senhas é uma ferramenta simples para quem busca criar senhas seguras. A implementação demonstra o uso de randomização e manipulação de strings em C#, proporcionando uma base sólida para futuras melhorias, como a inclusão de mais opções de personalização e segurança na geração de senhas.
 
 ---
 
 ## 4. Conversor de Temperatura
-Desenvolvido por: Luiz Otávio [@S-accarose](https://github.com/S-accarose)
+Desenvolvido por: Luiz Otávio [(@S-accarose)](https://github.com/S-accarose)
 
 Descrição: Desenvolver um conversor de temperatura entre Celsius, Fahrenheit e Kelvin. O usuário escolhe o tipo de conversão.
 
@@ -101,7 +101,7 @@ Este conversor de temperatura é uma ferramenta útil para realizar conversões 
 ---
 
 ## 5. Simulador de Lançamento de Dados
-Desenvolvido por: Carol Duarte [@duacarol](https://github.com/duacarol)
+Desenvolvido por: Carol Duarte [(@duacarol)](https://github.com/duacarol)
 
 Descrição: Simular o lançamento de um dado de 6 faces e exiba o resultado aleatório. Oferecer ao usuário a opção de lançar o dado várias vezes.
 
@@ -122,7 +122,7 @@ Este simulador oferece uma forma descomplicada de jogar dados, permitindo que o 
 ---
 
 ## 6. Calculadora de IMC
-Desenvolvido por: Luiz Otávio [@S-accarose](https://github.com/S-accarose)
+Desenvolvido por: Luiz Otávio [(@S-accarose)](https://github.com/S-accarose)
 
 Descrição: O usuário insere seu peso e altura, e o programa calcula o IMC, dando uma categoria de saúde (baixo peso, normal, sobrepeso, etc.)
 
@@ -145,7 +145,7 @@ Este programa simples oferece uma maneira rápida e eficiente de calcular o IMC 
 ---
 
 ## 7. Decisão de Almoço
-Desenvolvido por: Carol Duarte [@duacarol](https://github.com/duacarol)
+Desenvolvido por: Carol Duarte [(@duacarol)](https://github.com/duacarol)
 
 Descrição: O programa gera opções de restaurantes ou pratos pra o usuário escolher, ou gera uma escolha aleatória de almoço se o usuário estiver indeciso.
 
@@ -171,7 +171,7 @@ Este aplicativo foi desenvolvido para simplificar a escolha de refeições, espe
 ---
 
 ## 8. Cronômetro Simples
-Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno [@skazzi47](https://github.com/skazzi47)
+Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno [(@skazzi47)](https://github.com/skazzi47)
 
 Descrição: Desenvolver um cronômetro onde o usuário define quantos segundos o cronômetro deve rodar.
 
