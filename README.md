@@ -2,7 +2,8 @@
 Projetos desenvolvidos em equipe como parte de uma atividade do curso técnico em Informática para Internet do SENAI.
 
 ## 1. Calculadora Simples
-Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno (@skazzi47)
+Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno [@skazzi47](https://github.com/skazzi47)
+
 Descrição: Desenvolver uma calculadora que peça dois números e uma operação (+, -, *, /).
 
 ### O que foi utilizado
@@ -25,7 +26,8 @@ Geralmente, quando iríamos fazer estruturas condicionais em códigos de qualque
 ---
 
 ## 2. Jogo de Adivinhação de Números
-Desenvolvido por: Ykaro Kaynã (@kayna190)
+Desenvolvido por: Ykaro Kaynã [@kayna190](https://github.com/kayna190)
+
 Descrição: Criar um jogo onde o programa gera um número aleatório e o usuário tenta adivinhar. Dar dicas se o número é maior ou menor.
 
 ## O que foi utilizado
@@ -50,7 +52,8 @@ Este jogo de adivinhação oferece uma experiência divertida e interativa, ilus
 ---
 
 ## 3. Gerador de Senhas Aleatórias
-Desenvolvido por: Lígia Souza (@liGia-sz)
+Desenvolvido por: Lígia Souza [@liGia-sz](https://github.com/liGia-sz)
+
 Descrição: Fazer um programa que gere uma senha aleatória com base em um conjunto de caracteres (letras e números) com um comprimento definido pelo usuário.
 
 ## O que foi utilizado
@@ -74,7 +77,8 @@ Este gerador de senhas é uma ferramenta simples para quem busca criar senhas se
 ---
 
 ## 4. Conversor de Temperatura
-Desenvolvido por: Luiz Otávio (@S-accarose)
+Desenvolvido por: Luiz Otávio [@S-accarose](https://github.com/S-accarose)
+
 Descrição: Desenvolver um conversor de temperatura entre Celsius, Fahrenheit e Kelvin. O usuário escolhe o tipo de conversão.
 
 ### O que foi utilizado
@@ -97,7 +101,8 @@ Este conversor de temperatura é uma ferramenta útil para realizar conversões 
 ---
 
 ## 5. Simulador de Lançamento de Dados
-Desenvolvido por: Carol Duarte (@duacarol)
+Desenvolvido por: Carol Duarte [@duacarol](https://github.com/duacarol)
+
 Descrição: Simular o lançamento de um dado de 6 faces e exiba o resultado aleatório. Oferecer ao usuário a opção de lançar o dado várias vezes.
 
 ### O que foi utilizado
@@ -117,7 +122,8 @@ Este simulador oferece uma forma descomplicada de jogar dados, permitindo que o 
 ---
 
 ## 6. Calculadora de IMC
-Desenvolvido por: Luiz Otávio (@S-accarose)
+Desenvolvido por: Luiz Otávio [@S-accarose](https://github.com/S-accarose)
+
 Descrição: O usuário insere seu peso e altura, e o programa calcula o IMC, dando uma categoria de saúde (baixo peso, normal, sobrepeso, etc.)
 
 ### O que foi utilizado
@@ -139,7 +145,8 @@ Este programa simples oferece uma maneira rápida e eficiente de calcular o IMC 
 ---
 
 ## 7. Decisão de Almoço
-Desenvolvido por: Carol Duarte (@duacarol)
+Desenvolvido por: Carol Duarte [@duacarol](https://github.com/duacarol)
+
 Descrição: O programa gera opções de restaurantes ou pratos pra o usuário escolher, ou gera uma escolha aleatória de almoço se o usuário estiver indeciso.
 
 ### O que foi utilizado
@@ -164,7 +171,8 @@ Este aplicativo foi desenvolvido para simplificar a escolha de refeições, espe
 ---
 
 ## 8. Cronômetro Simples
-Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno (@skazzi47)
+Desenvolvido por: Guilherme Mauricio de Oliveira Damasceno [@skazzi47](https://github.com/skazzi47)
+
 Descrição: Desenvolver um cronômetro onde o usuário define quantos segundos o cronômetro deve rodar.
 
 ### O que foi utilizado
