@@ -1,32 +1,52 @@
 ﻿using System;
-class Program
+
+public class Program
 {
-    static void Main()
+    public static void Main()
     {
-        Console.WriteLine("|\tAdivinhe O Número!\t|\n");
-        Console.WriteLine("Você deve adivinhar o número de 1 à 100:\n");
+        // Variáveis que definem o intervalo de números:
+        int min = 0;
+        int max = 100;
+
+        //Gera número aleatório entre min e max:
         Random random = new Random();
-        int numeroAleatorio = random.Next(1, 100);
-        Console.WriteLine("Número Gerado! Agora tente adivinhar qual número foi gerado:\n");
-        return1:
-        if(int.TryParse(Console.ReadLine(),out int palpite));
+        int Secretnum = random.Next(min, max + 1);
+        int chute = 0;
+        int tentativas = 0;
+
+        Console.WriteLine("•┈••✦ ADIVINHE O NÚMERO ✦••┈• -");
+        Console.WriteLine($"✧*̥˚ Adivinhe o número que estou pensando entre {min} e {max}*✧*̥˚");
+        Console.WriteLine("Digite seu chute: ");
+        // Converte a entrada do usuário em um número inteiro
+        do
         {
-            if(palpite == numeroAleatorio)
+            if (int.TryParse(Console.ReadLine(), out chute))
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Você ACERTOU!\n");
-                Console.ResetColor();
+                tentativas++;
+                //Loop Do While
+
+                if (chute < Secretnum)
+                {
+                    Console.Write("↓ MUITO BAIXO ↓ Tente novamente: ");
+                }
+
+                if (chute > Secretnum)
+                {
+                    Console.Write("↑ MUITO ALTO ↑. Tente novamente: ");
+                }
             }
-            else if(palpite < numeroAleatorio)
+            else
             {
-                Console.WriteLine("O número gerado é maior!\n");
-                goto return1;
+                Console.WriteLine($"˗ˏˋDigite um número entre 0 e 100´ˎ˗");
             }
-            else if (palpite > numeroAleatorio)
+
+
+            if (chute == Secretnum)
             {
-                Console.WriteLine("O número gerado é menor!\n");
-                goto return1;
+                Console.WriteLine($"* ✩‧₊˚PARABÉNS! Você adivinhou em {tentativas} tentativas!* ✩‧₊˚");
             }
+
         }
+        while (chute != Secretnum);
     }
 }
