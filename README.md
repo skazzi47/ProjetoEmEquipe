@@ -37,6 +37,20 @@ Feito por: Lígia Morais de Souza
 ## 4. Conversor de Temperatura
 Feito por: Luiz Otávio Ferreira da Silva
 
+### O que foi utilizado
+Biblioteca `System` e estruturas de decisão para contorno de input inválido e impressão do resultado da conversão em console.
+
+### O que foi utilizado
+- **Linguagem de Programação:** C#
+- **Framework:** .NET
+- **Versionamento:** GIT
+- **Gestão de Repositórios:** GitHub
+
+- [x] Solicitar que o usuário insira o valor a ser convertido.
+- [x] Mensagem de erro para input inválido do usuário.
+- [x] Escolha do tipo de conversão: Após inserir o valor a ser convertido, o usuário decide o tipo de conversão a ser realizada.
+- [x] Impressão do resultado em console.
+
 ---
 
 ## 5. Simulador de Lançamento de Dados
@@ -63,6 +77,19 @@ Este simulador oferece uma forma descomplicada de jogar dados, permitindo que o 
 
 ## 6. Calculadora de IMC
 Feito por: Luiz Otávio Ferreira da Silva
+
+### O que foi utilizado
+Biblioteca `System` e estruturas de decisão para contorno de input inválido e impressão do resultado do cálculo em console.
+
+### O que foi utilizado
+- **Linguagem de Programação:** C#
+- **Framework:** .NET
+- **Versionamento:** GIT
+- **Gestão de Repositórios:** GitHub
+
+- [x] Solicitar ao usuário dois valores para o cálculo matemático.
+- [x] Mensagem de erro para input inválido do usuário.
+- [x] Impressão do resultado em console.
 
 ---
 
