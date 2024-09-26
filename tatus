@@ -1,0 +1,270 @@
+[33mcommit 10696c919e753a73bfde17b69b5b3f3652c2e3f6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Thu Sep 26 08:06:27 2024 -0300
+
+    ProjetoEmEquipe
+
+[33mcommit ee85fd22f8cce750c188b5173b5ab61af4d5709d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 2c8e694 42c2717
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Thu Sep 26 07:46:58 2024 -0300
+
+    Merge pull request #9 from S-accarose/main
+    
+    Update README.md
+
+[33mcommit 42c2717edd192b0d7b9e66bcdee3f7833e225a33[m
+Author: Luiz Otávio <134003535+S-accarose@users.noreply.github.com>
+Date:   Wed Sep 25 18:59:48 2024 -0300
+
+    Update README.md
+
+[33mcommit 2c8e694689a6fbfecc23d94ef7f8b1c416ada001[m
+Merge: 5c6b615 aa10b54
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Wed Sep 25 10:59:54 2024 -0300
+
+    Merge pull request #7 from duacarol/main
+    
+    Organização
+
+[33mcommit aa10b54f0cb9ab67ffeb628abdd3e4a63acaadd2[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Wed Sep 25 10:58:20 2024 -0300
+
+    organizando arquivo e atualizando README.md
+
+[33mcommit 5c6b615815a5a733fd488f49fa4268e3f111b041[m
+Merge: fb20801 07d5c44
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Wed Sep 25 10:15:40 2024 -0300
+
+    Merge pull request #6 from duacarol/main
+    
+    Adicionar "Decisão de Almoço"
+
+[33mcommit 07d5c44858918ba74e5cc851eda40b0deade518f[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Wed Sep 25 08:57:33 2024 -0300
+
+    update README.md
+
+[33mcommit 6eb249b89bb5f930ff88c3796501b756719bb4a5[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Wed Sep 25 08:13:07 2024 -0300
+
+    melhoria interface e validações
+
+[33mcommit 25064ef8dad5635576988450e36c47fe30c00498[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Tue Sep 24 19:50:28 2024 -0300
+
+    melhoria interface usuário e pequena correção validação menu
+
+[33mcommit 9a990a69007cfb1bdc47975af124a74663616178[m
+Merge: bac3944 635072d
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Tue Sep 24 11:27:23 2024 -0300
+
+    adicionando validações de entrada
+
+[33mcommit bac3944f11bac4ebafdffbde5dd63d428917e9ff[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Tue Sep 24 11:25:45 2024 -0300
+
+    adicionando validações de entrada
+
+[33mcommit 635072d50686012596ab992780947be19e7d5e4a[m
+Merge: cd136c9 fb20801
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Tue Sep 24 11:01:40 2024 -0300
+
+    Merge branch 'skazzi47:main' into main
+
+[33mcommit cd136c96460eafe19d5466ed0054bba404aeeb02[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Tue Sep 24 11:01:25 2024 -0300
+
+    adicionada opção escolha randômica
+
+[33mcommit 9c049e9e63ef2a65134b2f846cf2e1ac6ec008db[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Tue Sep 24 10:52:37 2024 -0300
+
+    adicionadas opções de restaurantes com o prato selecionado
+
+[33mcommit fb20801add5cf3b7b2f4ac1ab3c1361cf42e4370[m
+Merge: 3cda786 2c922a9
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Tue Sep 24 08:37:43 2024 -0300
+
+    Merge branch 'main' of https://github.com/skazzi47/ProjetoEmEquipe
+
+[33mcommit 3cda786a842c241e57cea99cc0f06583cd729196[m
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Tue Sep 24 08:24:04 2024 -0300
+
+    ProjetoEmEquipe
+
+[33mcommit 2c922a95ad9a1ce5b6ddc439dfc64b4d56027a86[m
+Merge: 222b358 6eb9af3
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Tue Sep 24 07:54:16 2024 -0300
+
+    Merge pull request #3 from duacarol/main
+    
+    Adicionar Projeto "SimuladorLançamentoDados"
+
+[33mcommit 222b3582683f50560e32be5215c55149ab144c4c[m
+Merge: 77d0d74 6144af6
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Tue Sep 24 07:53:59 2024 -0300
+
+    Merge pull request #4 from S-accarose/main
+    
+    Atividades 04 e 06 da lista
+
+[33mcommit 77d0d740d3c82117263fb87d1a2b9abaa12324dc[m
+Merge: cea92ba d8375bb
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Tue Sep 24 07:53:33 2024 -0300
+
+    Merge pull request #5 from liGia-sz/main
+    
+    Adicionar projeto GeradorDeSenhas
+
+[33mcommit 6eb9af32775cf5ff28d140f4abb84ac6d1f546df[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 19:45:30 2024 -0300
+
+    adicionadas opções de pratos no restaurante selecionado
+
+[33mcommit 1bfaa43688e955b266083fe403539d58cfc1e6b0[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 15:06:16 2024 -0300
+
+    adicionadas opções de restaurantes
+
+[33mcommit e4b2b01f029129e817e47aeb8296681eb73d3994[m
+Merge: 0f68f5d cea92ba
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 14:06:19 2024 -0300
+
+    Merge branch 'skazzi47:main' into main
+
+[33mcommit 0f68f5d34db039aa38fc561802950fc4dd5cdd08[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 11:11:56 2024 -0300
+
+    novo projeto: 'DecisaoAlmoco'
+
+[33mcommit 6144af678bbecf8d895908d4b0a763baf33e5ae8[m
+Author: Luiz Otávio <134003535+S-accarose@users.noreply.github.com>
+Date:   Mon Sep 23 11:09:37 2024 -0300
+
+    Update README.md
+
+[33mcommit 8d5a1d68bb01cdbe9924d2a8bdb9c825590d1091[m
+Author: Luiz Otávio <134003535+S-accarose@users.noreply.github.com>
+Date:   Mon Sep 23 11:08:36 2024 -0300
+
+    att3
+
+[33mcommit 642777b68f2ebbb95715110142b11d7792e443ed[m
+Author: Luiz Otávio <134003535+S-accarose@users.noreply.github.com>
+Date:   Mon Sep 23 11:05:28 2024 -0300
+
+    att2
+
+[33mcommit 6ef3651f733f5c4a6f8e13a88f34f74e9e1ad897[m
+Author: Luiz Otávio <134003535+S-accarose@users.noreply.github.com>
+Date:   Mon Sep 23 11:04:01 2024 -0300
+
+    Att
+
+[33mcommit 1f3ffcf7d22d062987e4bf39dfe9d5061504dfa5[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 11:02:34 2024 -0300
+
+    add README_SimuladorLancamentoDados.md
+
+[33mcommit cf1b1112c22f0db74ba62d735cff9c84fc2c09d2[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 10:57:16 2024 -0300
+
+    Revert "update README.md"
+    
+    This reverts commit 593e2e616b650b5a9878ababacf5bc6d02b20db9.
+
+[33mcommit 593e2e616b650b5a9878ababacf5bc6d02b20db9[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 10:49:54 2024 -0300
+
+    update README.md
+
+[33mcommit 1a1dee47e087f7c359b64f4712c46d0e4de785e8[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 10:18:14 2024 -0300
+
+    melhoria interface
+
+[33mcommit 48b9e95d1f7b8511a0d0d4942d7fc0a9f0c62e7f[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 09:02:37 2024 -0300
+
+    nova funcionalidade: jogar de novo
+
+[33mcommit cea92bacc3d9586d1a373ca844b56224644166c3[m
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Mon Sep 23 08:51:16 2024 -0300
+
+    ProjetoEmEquipe
+
+[33mcommit 4b3e14d1170406e0d448dd00977c2c5211c58a32[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 08:40:41 2024 -0300
+
+    adicionada funcionalidade: gerar resultado aleatório
+
+[33mcommit db9504acd229ef3b9e485f8a4ce0055aad02dfb8[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Mon Sep 23 08:34:29 2024 -0300
+
+    novo projeto: SimuladorLancamentoDados
+
+[33mcommit c1946a6d0bd93c5216dccaca2e55f65cac04baf0[m
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Mon Sep 23 08:08:47 2024 -0300
+
+    ProjetoEmEquipe
+
+[33mcommit 7b92d911966e40d211143f85509ff43021e00aad[m
+Merge: afb776a ecc7c5f
+Author: Guilherme Mauricio <guilhermemauricio219@gmail.com>
+Date:   Mon Sep 23 07:58:50 2024 -0300
+
+    Merge pull request #1 from duacarol/duacarol/branch-1
+    
+    Adiciona GerenciadorTarefas
+
+[33mcommit d8375bb928f4834b2807557bf813a7fa22b6792f[m
+Author: Ligia Morais <s.morais.ligia@gmail.com>
+Date:   Sat Sep 21 19:09:35 2024 -0300
+
+    Adicionando README_JogoDaForca
+
+[33mcommit 1d6665017b9c5d03f3ef52902f00250a90b875b4[m
+Author: Ligia Morais <s.morais.ligia@gmail.com>
+Date:   Sat Sep 21 17:33:01 2024 -0300
+
+    Adicionando projeto JogoDaForca
+
+[33mcommit ecc7c5f8616455ceace9b958773d9188732edf8d[m
+Author: Carol <carolduarte2000@gmail.com>
+Date:   Fri Sep 20 23:12:44 2024 -0300
+
+    Revert "Update README.md"
+    
+    This reverts commit f5730d92b67269ec6152778970c0a485c200fb21.
+
+[33

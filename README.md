@@ -124,12 +124,12 @@ Este aplicativo foi desenvolvido para simplificar a escolha de refeições, espe
 Feito por: Guilherme Mauricio de Oliveira Damasceno
 
 ### O que foi utilizado:
--Linguagem de Programação:  ``C#``
--Biblioteca ``System.Diagnostics``
--Comando ``Stopwatch stopwatch = new stopwatch();``
--Comando ``stopwatch.Start();``
--Comando ``stopwatch.Stop();``
--Comando ``TimeSpan tempoDecorrido = stopwatch.Elapsed;``
+- Linguagem de Programação:  ``C#``
+- Biblioteca ``System.Diagnostics``
+- Comando ``Stopwatch stopwatch = new stopwatch();``
+- Comando ``stopwatch.Start();``
+- Comando ``stopwatch.Stop();``
+- Comando ``TimeSpan tempoDecorrido = stopwatch.Elapsed;``
 
 ### Etapas implementadas:
 - [x] Chamar o comando ``Stopwatch`` para medir o tempo decorrido de maneira precisa.
